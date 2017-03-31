@@ -64,7 +64,7 @@ class Chat implements MessageComponentInterface {
 
     public function tell($param) {
         foreach ($this->clients as $client) {
-            if ($from !== $client) {
+            if ($param !== $client) {
                 // The sender is not the receiver, send to each client connected
                 $dataUserOnline = array();
                 foreach ($this->user as $key => $value) {

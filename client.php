@@ -23,7 +23,7 @@ and open the template in the editor.
                 var conn = null;
                 $('#masuk').click(function () {
                     user = $('#username').val();
-                    conn = new WebSocket('ws://192.168.1.20:8081');
+                    conn = new WebSocket('ws://172.10.69.150:8081');
                     conn.onopen = function (e) {
                         console.log("Connection established!");
                         $(".chat").append("Anda : <small>telah bergabung</small><br>");
